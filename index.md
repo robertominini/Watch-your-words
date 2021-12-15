@@ -36,11 +36,6 @@ Renzi and Salvini are not alone, indeed we found that such differences can be fo
 
 # What are we looking for? Research question
 
-| Command | Description |
-| --- | --- |
-| `git status` | List all *new or modified* files |
-| `git diff` | Show file differences that **haven't been** staged |
-
 
 Our supposition is that there is a difference in the linguistic usage between the two sides of the political spectrum. We suspect this difference to be found in the 
 
@@ -74,7 +69,12 @@ The Flesch reading-ease index is a measure for the “readability” of a text. 
 The formula for the Flesch reading-ease score is the following: 
 
 To provide the reader with an intuition of the meaning of the values, this is a rough correspondence between the values of the index with the school level at which that property of speech is achieved.
-%inserire tabella
+
+| Command | Description |
+| --- | --- |
+| `git status` | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged |
+
 
 ### Flesch-Kincaid Grade
 The Flesch-Kincaid Grade is a modification of the Flesch Reading Ease index, and has a nice straightforward interpretation: its output represents roughly the number of years of education required to understand the text provided. The formula for the grade is the following:
