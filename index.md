@@ -31,7 +31,7 @@ For more details see [Basic writing and formatting syntax](https://docs.github.c
 ### Nostrografico 2
 
 
-{% include plotlytext.html %}
+{% include figchemical_2.html %}
 
 
 ### Nostro Grafico
