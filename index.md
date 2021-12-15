@@ -158,7 +158,7 @@ Bla bla
 
 {% include figchemical_4.html %}
 
-Bla bla
+Bla bla DIO BONO
 
 ### End Ada
 
