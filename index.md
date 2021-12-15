@@ -73,7 +73,7 @@ To provide the reader with an intuition of the meaning of the values, this is a 
 ### Flesch-Kincaid Grade
 The Flesch-Kincaid Grade is a modification of the Flesch Reading Ease index, and has a nice straightforward interpretation: its output represents roughly the number of years of education required to understand the text provided. The formula for the grade is the following:
 
-
+{% include porco.html %} 
 ### Gunning Fog Index
 The Gunning Fog index is yet another readability score. Very closely to the Flesch-Kincaid Grade, it tries to make an estimate of the number of years of formal education needed to understand the text when reading it for the first time. The formula for the Gunning fox index is the following, where “complex words” are defined as the words with 3 or more syllables. 
 
@@ -99,6 +99,13 @@ TODO
 - Choose text of Obama
 - Apply scripts
 
+# Map test
+
+{% include map_test.html %} 
+
+# Graph test
+
+{% include graph_test.html %} 
 
 
 # Let's start our investigation...
