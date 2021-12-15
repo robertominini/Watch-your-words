@@ -36,6 +36,12 @@ Renzi and Salvini are not alone, indeed we found that such differences can be fo
 
 # What are we looking for? Research question
 
+| Command | Description |
+| --- | --- |
+| `git status` | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged |
+
+
 Our supposition is that there is a difference in the linguistic usage between the two sides of the political spectrum. We suspect this difference to be found in the 
 
 number of different words while speaking (variety of lexicon)
