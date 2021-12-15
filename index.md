@@ -34,6 +34,12 @@ For more details see [Basic writing and formatting syntax](https://docs.github.c
 {% include figchemical_2.html %}
 
 
+
+{% include figchemical_3.html %}
+
+
+
+
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/robertominini/webiste4/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
