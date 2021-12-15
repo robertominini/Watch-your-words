@@ -20,7 +20,7 @@ MISSING
 </p>
 
 
-<iframe src="https://prova-robi-cera.herokuapp.com" width=700 height=600>
+
 
 
 In the new technology and social media era we are constantly exposed to politics, and thus political speech. One thing that’s easy to notice is that some politicians have a more refined speech than others. 
@@ -163,4 +163,6 @@ Bla bla
 {% include porco.html %}
 
 Bla bla DIO BONO
+
+<iframe src="https://prova-robi-cera.herokuapp.com" width=700 height=600>
 
