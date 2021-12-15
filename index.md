@@ -1,6 +1,6 @@
 <p align="center">
 	<a href="https://postimg.cc/dL9WhCRB">
-  		<img src="https://i.postimg.cc/jdpBkQLG/ada-group-project-spaghetti-carbonada.png">
+  		<img width="1600" height="1400" img src="https://i.postimg.cc/jdpBkQLG/ada-group-project-spaghetti-carbonada.png">
 	</a>
 </p>
 
