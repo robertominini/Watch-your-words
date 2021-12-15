@@ -156,7 +156,7 @@ MAP, AGE, PARTY ...
 Bla bla
 Bla bla
 
-{% include figchemical_4.html %}
+{% include porco.html %}
 
 Bla bla DIO BONO
 
