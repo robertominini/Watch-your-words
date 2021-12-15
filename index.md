@@ -117,6 +117,13 @@ TODO
 
 {% include academic_prova.html %} 
 
+# Othe tests
+
+{% include graph_party_test.html %} 
+{% include graph_age_test.html %} 
+{% include graph_congress_test.html %} 
+{% include Graph_chamber_test.html %} 
+
 
 # Let's start our investigation...
 
