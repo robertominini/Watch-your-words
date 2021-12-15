@@ -156,7 +156,7 @@ MAP, AGE, PARTY ...
 Bla bla
 Bla bla
 
-{% include figchemical_3.html %}
+{% include figchemical_4.html %}
 
 Bla bla
 
