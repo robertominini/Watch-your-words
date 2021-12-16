@@ -18,7 +18,7 @@ It's the answer told by lines that stretched around schools and churches in numb
 It's the answer spoken by young and old, rich and poor, Democrat and Republican, black, white, Latino, Asian, Native American, gay, straight, disabled and not disabled — Americans who sent a message to the world that we have never been a collection of red states and blue states; we are, and always will be, the United States of America.
 <br><br> **Obama's Victory Speech** (2008)*
 
-
+<br><br>
 
 > *Thank you. Thank you very much, everybody. Sorry to keep you waiting. Complicated business. Complicated. Thank you very much.
 I've just received a call from Secretary Clinton. She congratulated us. It's about us. On our victory, and I congratulated her and her family on a very, very hard-fought campaign.
