@@ -15,10 +15,11 @@ MISSING
 
 In order to get a first taste of how the metrics work, we will analyze two famous victory speeches by Barack Obama and Donald Trump. The two speeches have one thing in common: they both shocked the world at their times. The former was pronunced in an historic moment of U.S. history, when the first afro-american president was elected. The latter rapresented the victory of one the most controversial candidate of the U.S. modern era, who a lot of people did not expect to win.
 Barack Obama and Donald Trump deal with dialogue in two very different ways. What we want to show is how powerful the metrics are in order to detect this differences automatically. Here are the two extracts from the two speeches, on which we computed the metrics: 
+<br>
 
 > *If there is anyone out there who still doubts that America is a place where all things are possible; who still wonders if the dream of our founders is alive in our time; who still questions the power of our democracy, tonight is your answer.
 It's the answer told by lines that stretched around schools and churches in numbers this nation has never seen; by people who waited three hours and four hours, many for the very first time in their lives, because they believed that this time must be different; that their voice could be that difference.
-It's the answer spoken by young and old, rich and poor, Democrat and Republican, black, white, Latino, Asian, Native American, gay, straight, disabled and not disabled — Americans who sent a message to the world that we have never been a collection of red states and blue states; we are, and always will be, the United States of America.
+It's the answer spoken by young and old, rich and poor, Democrat and Republican, black, white, Latino, Asian, Native American, gay, straight, disabled and not disabled  Americans who sent a message to the world that we have never been a collection of red states and blue states; we are, and always will be, the United States of America.
 <br><br> **Obama's Victory Speech** (2008)*
 
 <br><br>
