@@ -13,6 +13,16 @@
 MISSING
 
 
+> Thank you. Thank you very much, everybody. Sorry to keep you waiting. Complicated business. Complicated. Thank you very much.
+I've just received a call from Secretary Clinton. She congratulated us. It's about us. On our victory, and I congratulated her and her family on a very, very hard-fought campaign.
+I mean, she fought very hard. Hillary has worked very long and very hard over a long period of time, and we owe her a major debt of gratitude for her service to our country.
+I mean that very sincerely. Now it is time for America to bind the wounds of division, have to get together. To all Republicans and Democrats and independents across this nation, I say it is time for us to come together as one united people.
+It is time. I pledge to every citizen of our land that I will be President for all of Americans, and this is so important to me. For those who have chosen not to support me in the past, of which there were a few people, I'm reaching out to you for your guidance and your help so that we can work together and unify our great country.
+
+
+
+
+
 # Framing our research
 
 
