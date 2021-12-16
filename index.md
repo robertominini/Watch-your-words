@@ -99,23 +99,20 @@ The Gunning Fog index is yet another readability score. Very closely to the Fles
 <iframe src="https://prova-robi-cera.herokuapp.com" style=" width: 800px; height: 800px;  overflow: hidden;" scrolling="no"></iframe>
 
 
-Again, to provide the intuition of the correspondence between the score and the grade level needed to understand the text, we provide the following table:
-%INSERIRE TABELLA
-
 ### MTLD and VOC-d
 The MTLD and the VOC-d measures are lexical diversity measures.
 
 #### VOC-d
 In order to calculate the VOC-d metric we follow the following steps:
-1. From the text, we take 100 samples made of 35 tokens
-2. For each of these samples, we compute the TTR is (TTR is the ratio obtained by dividing the types (the total number of different words) occurring in a text or utterance by  its tokens (the total number of words)) (https://www.birmingham.ac.uk/Documents/college-artslaw/cels/essays/languageteaching/DaxThomas2005a.pdf) 
-3. We calculate the mean TTR of the samples
+1. From the text, we take 100 samples made of 35 tokens.
+2. For each of these samples, we compute the Type-to-Token ratio (TTR). TTR is the ratio obtained by dividing the types (the total number of different words) occurring in a text by  its tokens (the total number of words).
+3. We calculate the mean TTR of the the 100 samples.
 4. We repeat the steps 1,2,3 , and each time we increase by 1 the number of tokens we take, for values 36 to 50.
-5. We create a curve with the mean values of the TTR
-6. We approximate the empirical TTR curve by defining a new curve which depends on a parameter we call D coefficient
-7. We choose the optimal D coefficient which fits the curve and we store it
+5. We create a curve with the mean values of the TTR.
+6. We approximate the empirical TTR curve by defining a new curve which depends on a parameter we call D coefficient.
+7. We choose the optimal D coefficient which fits the curve and we store it.
 8. We run procedure 1-7 for 2 more times, such that in the end we have 3 optimal D values.
-9. We compute the mean of the D values, this is the final score (which ranges from 10 to 100)
+9. We compute the mean of the D values, this is the final score (which ranges from 10 to 100).
 
 
 ### Unique words
@@ -173,12 +170,25 @@ FAMOUS POLITICIANS
 
 MAP, AGE, PARTY ...
 
+### Hypothesis Testing
 
-Bla bla
-Bla bla
+In this section, we check whether there is a significant difference in language within these 6 different groupings:
 
-{% include porco.html %}
+1. Democrats vs Repubblicans
+2. House members vs Senate member
+3. House Democrats vs House Repubblicans
+4. Senate Democrats vs Sanate Repubblicans
+5. House Democrats vs Senate Democrats
+6. House Repubblicans vs Senate Repubblicans
 
-Bla bla DIO BONO
+
+All the three metrics agreed on the significance for all groupings. The results of the tests are:
+
+1. Democrats vs Repubblicans:                 **significant**
+2. House members vs Senate member:              non-significant
+3. House Democrats vs House Repubblicans:     **significant**
+4. Senate Democrats vs Sanate Repubblicans:     non-significant
+5. House Democrats vs Senate Democrats:         non-significant
+6. House Repubblicans vs Senate Repubblicans:   non-significant
 
 
