@@ -75,16 +75,6 @@ The formula for the Flesch reading-ease score is the following:
 
 To provide the reader with an intuition of the meaning of the values, this is a rough correspondence between the values of the index with the school level at which that property of speech is achieved.
 
-| Command | Description |
-| --- | --- |
-| `git status` | List all *new or modified* files |
-| `git diff` | Show file differences that **haven't been** staged |
-	
-	
-| Score | School level (US) | Notes |
-| --- | --- | --- |
-| `git status` | List all *new or modified* files | bla |
-| `git diff` | Show file differences that **haven't been** staged | bla |
 	
 | Score | School level (US) | Notes |
 | --- | --- | --- |	
@@ -115,13 +105,33 @@ Again, to provide the intuition of the correspondence between the score and the 
 ### MTLD and VOC-d
 The MTLD and the VOC-d measures are lexical diversity measures.
 
+#### VOC-d
+In order to calculate the VOC-d metric we follow the following steps:
+1. From the text, we take 100 samples made of 35 tokens
+2. For each of these samples, we compute the TTR is (TTR is the ratio obtained by dividing the types (the total number of different words) occurring in a text or utterance by  its tokens (the total number of words)) (https://www.birmingham.ac.uk/Documents/college-artslaw/cels/essays/languageteaching/DaxThomas2005a.pdf) 
+3. We calculate the mean TTR of the samples
+4. We repeat the steps 1,2,3 , and each time we increase by 1 the number of tokens we take, for values 36 to 50.
+5. We create a curve with the mean values of the TTR
+6. We approximate the empirical TTR curve by defining a new curve which depends on a parameter we call D coefficient
+7. We choose the optimal D coefficient which fits the curve and we store it
+8. We run procedure 1-7 for 2 more times, such that in the end we have 3 optimal D values.
+9. We compute the mean of the D values, this is the final score (which ranges from 10 to 100)
+
 
 ### Unique words
 This is yet another diversity metric that we implemented from scratch. Given a certain window of words taken into consideration, for instance 1000 words, how many unique words does the person use? This measure gives a rough estimate of the lexical diversity of the speaker. 
 
 ### CEFR Level
-Finally, thanks to the help of an API, we managed also to estimate the English level of the speaker (CEFR Level) in a scale from 
-The computation takes into account around 30 different metrics, from…
+Finally, thanks to the help of an API, we managed also to estimate the English level of the speaker (CEFR Level) in a scale from A1 to B2.
+The metric for the CEFR level is computed by analyzing the level of each word used in a text.  The same word might also have different levels based on how it is used. For example, hunt as a verb for killing animals is B1, hunt as a verb for searching someone or something is B2, while hunt as a noun is C2. In this case, we consider each word for the lowest level (in the case of the example, B1). Once the level of each word is determined, this information is aggregated and used to produce the final estimate of the language level of the text. The computation takes into account around 30 different metrics, metrics such as:
+
+* Statistics/Syllables
+* Lexical diversity
+* Lexical Sophistication: English Vocabulary Profile (incl. % of words at each level)
+* Lexical Sophistication: British National Corpus
+* Lexical Sophistication: Corpus of Contemporary American English
+* Lexical Sophistication: Academic Word List
+* Metadiscourse markers
 
 
 ## EXAMPLE
