@@ -103,7 +103,7 @@ The Flesch-Kincaid Grade is a modification of the Flesch Reading Ease index, and
 The Gunning Fog index is yet another readability score. Very closely to the Flesch-Kincaid Grade, it tries to make an estimate of the number of years of formal education needed to understand the text when reading it for the first time. The formula for the Gunning fox index is the following, where “complex words” are defined as the words with 3 or more syllables. 
 
 
-<iframe src="https://prova-robi-cera.herokuapp.com" style=" width: 800px; height: 400px;  overflow: hidden;" scrolling="no"></iframe>
+<iframe src="https://prova-robi-cera.herokuapp.com" style=" width: 800px; height: 800px;  overflow: hidden;" scrolling="no"></iframe>
 
 
 Again, to provide the intuition of the correspondence between the score and the grade level needed to understand the text, we provide the following table:
