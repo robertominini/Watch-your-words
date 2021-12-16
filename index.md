@@ -1,25 +1,3 @@
-<head>
-
-<title>My Site</title>
-
-<style>
-
-.site-header{
-
-height:400px;
-
-}
-
-</style>
-
-</head>
-
-<header class="site-header">
-
-<img src="http://bit.ly/1ZK2tfG" height="300px" width="100%"/>
-
-</header>
-	
 	
 
 
