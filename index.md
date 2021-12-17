@@ -9,7 +9,7 @@
 
 <!-- [![ada-group-project-spaghetti-carbonada.png](https://i.postimg.cc/jdpBkQLG/ada-group-project-spaghetti-carbonada.png)](https://postimg.cc/dL9WhCRB) -->
 
-# About QuoteBank
+# (Prova) About QuoteBank
 Quotebank is an open corpus of 178 million quotations extracted from 162 million English news articles published in the years between 2008 and 2020. Each quotation is extracted and attributed to the speakers who uttered them thanks to the Quobert model, which is language and corpus-agnostic.  Both Quotebank and Quobert are publicly available at :https://doi.org/10.5281/zenodo.42773118
 
 
