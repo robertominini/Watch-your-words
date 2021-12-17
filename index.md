@@ -228,4 +228,40 @@ Also, Obama has a higher type to token ratio, so that means that he used a highe
 Overall, these results show that the metrics are capable of automatically detecting the lexical differences between the two texts in an automated way.
 
 
+# Let's start our investigation...
+We are interested into understanding whether there is any significant difference in any of the metrics we defined across the last four presidential candidates, Joe Biden, Donald Trump, Hillary Clinton and Barack Obama. We start by analyzing the number of unique words every 100, 200, 500, 1000, 2000, 5000 and 10000 words for each of the subjects. The number of quotations used is 100000 for each candidate.
+
+
+{% include freq_words.html %}
+
+Miss Clinton has a mean number of unique words statitically larger than Donald Trump, except for when we consider a very large number of words. Instead, such metric is statistically not different between Trump and Biden. Instead, Obama always outperforms the others in terms of number of unique words.
+
+
+It may be interesting to see which are the most commonly used words for these four politicians. To do so we use the cloud of words graphs.
+
+<p align="center">
+  	<img img src="https://i.postimg.cc/9X1Sh254/cloud.png">
+</p>
+
+
+We can notice that there are some words in common for each of them, such as "people", "president" or "country", while some others are not used by them all, for example "women" used frequently by Hillary Clinton, or "China", "border", "wall" used by Donald Trump.
+
+Now we want to dig deeper into the most commonly used words. In particular, thanks to the word frequency dataset and the level_score funciton previously defined, we want to assess the distribution of "academic" domain words against "spoken" domain ones, among the most commonly used words.
+
+<p align="center">
+  	<img img src="https://i.postimg.cc/YqRPP1Ng/academic-spoken.png">
+</p>
+
+We now move to interactive bar charts to better show what happens.
+
+{% include academic_words.html %}
+
+
+
+{% include spoken_words.html %}
+
+
+Finally, we use the metrics computed with the API.
+
+{% include api_important.html %}
 
