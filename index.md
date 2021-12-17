@@ -276,6 +276,8 @@ Finally, we use the metrics computed with the API.
 {% include graph_congress_flesh_ease_2.html %}
 
 
+<img src="https://latex.codecogs.com/gif.latex?O_t=\text { Onset event at time bin } t " /> 
+
 ## House vs Senate
 
 ## Grouped by age of birth
