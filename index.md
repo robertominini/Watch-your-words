@@ -66,10 +66,13 @@ We plan to investigate whether this difference is present in the US political la
 
 We can notice the politicians taken into account are balanced between Democrats and Republicans. Clearly there are many more Congressmen than Senators as it's natural given the House of Representatives is composed by 435 members, while the Senate includes only 100 individuals. Age-wise we can see that the majority of US Representatives included in our metrics were born in the 50s and 60s, and only 115 out of 539 considered were born in the 70s or later. Naturally by the way each congressman is assigned to a number of congress the 114th is the most represented. 58 is the number of politicians considered who were first elected in 2016 (first mandate during the 115th Congress), while this number increases to 77 for the midterm elections of 2018. (For the sunburst graphs, click on the charts to visualize the details!)
 
-
+## Proportion of politicians in each state
 {% include pie_state.html %} 
+## Proportion of politicians by party, chamber and birth date (40s = born in the 1940s)
 {% include sunburst_1.html %}
+## Proportion of politicians by chamber and birth date
 {% include sunburst_2.html %}
+## Proportion of politicians by chamber, party and birth date
 {% include sunburst_3.html %}
 
 
