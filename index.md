@@ -278,15 +278,20 @@ We now move to interactive bar charts to better show what happens.
 
 {% include academic_words.html %}
 
-
+Also here, Obama is the one with the highest average number of academic words in every case. Also we notice that from considering the most used 100 words and above the relative frequency among the politicians seems to converge in this order of frequency of academic words: Obama, Biden, Clinton, Trump.
 
 {% include spoken_words.html %}
+Also in this case, a part from the first case with the top 25 words, Obama is clearly the one farthest from the others, with a lower frequency of spoken domain words. Joe Biden is quite steadily the one with the highest average number of spoken language words, while for Clinton and Trump we can perform a Wald test to assess when their results are statistically different.
 
+DISCLAIMER: the dataset we used to tag the words either "academic" or "spoken" contains also many other tags. It is not true that a word is either academic or spoken. Moreover, the dataset contains 5000 words, so it may be that a word is not found in the dataset.
+
+They are always statistically not different a part when considering the 200 and 250 most used words, for which the average for Trump is higher.
 
 Finally, we use the metrics computed with the API.
 
 {% include api_important.html %}
 
+The results coming from the first three metrics provided by the API confirm what we guessed from the words frequency and most used words: Barack Obama is the one with the most complex communication style and the widest words spectrum, while Donald Trump and Joe Biden are those with the worst results. Regarding the MTLD and VOCD metrics there is a high variability depending on the subset of quotations analyzed, showing the little robustness of the metric used on such data (random quotations aggregated to form texts), therefore they do not show reliable results, for more accurate results regarding the lexical spectrum refer to the frequency function.
 
 # Aggregate comparisons
 
@@ -300,7 +305,9 @@ We start by analyzing the distribution of `Flesh_Reading_Ease` scores across the
 
 We can notice that the distribution of the scores are shifted to the right for Republicans, which can be interpreted (using the definition of the Flesh Reading Ease Score) by saying that Republicans in general use more simple sentences constructions. To verify the soundness of such hypothesis we ran a t-test.
 
-With a p-value of 0.0003 we can safely reject the null-hypothesis stating there is no statistical difference between the `Flesh Reading Ease` scores of Republicans and Democrats. We would like to know if the other two metric are consistent, to do that we run other two t-test which confirm the same hypothesis on `Flesch-Kincaid Grade` and `Gunning Fog Index` scores; in general Democrats appear to use more structured phrase constructions.
+With a p-value of 0.0003 we can safely reject the null-hypothesis stating there is no statistical difference between the Flesh Reading Ease scores of Republicans and Democrats. We would like to know if the other two metric are consistent, to do that we run other two t-test which confirm the same hypothesis on Flesch-Kincaid Grade and Gunning Fog Index scores; in general Democrats appear to use more structured phrase constructions.
+
+## House vs Senate
 
 Now that we have confirmed that there is indeed a significant difference between Republicans and Democrats we asked ourselves whether there other significant differences besides the one between parties. 
 
@@ -315,27 +322,40 @@ We start by analyzing possible differences between the two branches of Congress:
 
 From the 3 graphs above we can see that the only difference remain between the two different parties while for all three measure of lexical level there is no difference between Senators and Representatives inside the same party.
 
+As shown above and confirmed by our experiments on the following comparisons the three lexical metrics returned extremly consistent results, hence from now on we will only show the values from Flesh Reading Ease to avoid repeting ourselves.
+
 ## Is there a difference between age groups?
 
 The next questions we asked ourselves was: is there any significant difference between age groups? To answer that we used the same approach as done with parliament branches and compared values for each age group splitted between Democrats and Republicans.
 
 {% include graph_age_flesh_ease.html %}
+
+Firs, from the graph above we can notice that Democrats keep recording lower Flesh Reading Ease values in all age groups, confirming this is not a case of Simpson's Paradox. But what we are more intrested in analysing possible trends among age groups for each party. So we replot the same graph now grouping bars by party, such graph is shown below:
+
 {% include graph_age_flesh_ease_2.html %}
+
+From this second graph we can notice a steady trend among Republicans. It seems that younger Republican congressmen progressively adopted a more simple lexic. Even though differences seem really small and looking at confidence intervals we could not clearly reject null hypothesis of averages being identical. 
+The other thing we noticed from the previous graph is that Democrats born in 1970 or later score statistically significant higher Flesh Reading Ease scores that older colleagues. While all other Democrats across the remaining age groups seem to score consistently.
+
+## Is there a difference between the Old Guard and Newcomers?
+
+Next questions we asked ourselves is: is there a statistically significant difference in lexical complexity for politicians who entered in Congress during recent elections? 
+To reply to such question we plot the same graphs as above this time differentiating for the congress of first appearance.
 
 
 {% include graph_congress_flesh_ease.html %}
 {% include graph_congress_flesh_ease_2.html %}
 
+From the two graphs above we can notice that the difference between Democrats and Republicans remain true for each sub group of politician who entered the congress in 2015, 2017 or 2019, corresponding respectively to the 114th, 115th and 116th congresses. 
+
+In addition we can notice that the lexic chosen by politicians who more recently entered in congress is generally more simple, less refined. This can be seen both among Republicans as well as Democrats.
+
+## Map
+
+Finally, we asked ourselves if we could notice some significant differences for politicians elected in different US states. To do so we show an interactive map where we can visualize the aggregated values for the Flesh Reading Ease scores for each state, where we can also select individual parties and branches of the Congress.
 
 
-
-## House vs Senate
-
-
-
-## Grouped by congress 
-
-MAP, AGE, PARTY ...
+<iframe src="https://prova-robi-cera.herokuapp.com" style=" width: 800px; height: 800px;  overflow: hidden;" scrolling="no"></iframe>
 
 
 
@@ -365,8 +385,6 @@ All the three metrics agreed on the significance for all groupings. The results 
 
 
 
-
-<iframe src="https://prova-robi-cera.herokuapp.com" style=" width: 800px; height: 800px;  overflow: hidden;" scrolling="no"></iframe>
 
 
 
