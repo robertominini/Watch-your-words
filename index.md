@@ -11,51 +11,6 @@
 
 # About QuoteBank
 MISSING
-# An initial text comparison: victory speeches
-
-In order to get a first taste of how the metrics work, we will analyze two famous victory speeches by Barack Obama and Donald Trump. The two speeches have one thing in common: they both shocked the world at their times. The former was pronunced in an historic moment of U.S. history, when the first afro-american president was elected. The latter rapresented the victory of one the most controversial candidate of the U.S. modern era, who a lot of people did not expect to win.
-Barack Obama and Donald Trump deal with dialogue in two very different ways. What we want to show is how powerful the metrics are in order to detect this differences automatically. Here are the two extracts from the two speeches, on which we computed the metrics: 
-
-<br><br>
-
-> *If there is anyone out there who still doubts that America is a place where all things are possible; who still wonders if the dream of our founders is alive in our time; who still questions the power of our democracy, tonight is your answer.
-It's the answer told by lines that stretched around schools and churches in numbers this nation has never seen; by people who waited three hours and four hours, many for the very first time in their lives, because they believed that this time must be different; that their voice could be that difference.
-It's the answer spoken by young and old, rich and poor, Democrat and Republican, black, white, Latino, Asian, Native American, gay, straight, disabled and not disabled  Americans who sent a message to the world that we have never been a collection of red states and blue states; we are, and always will be, the United States of America.
-<br><br> **Obama's Victory Speech** (2008)*
-
-<br><br>
-
-> *Thank you. Thank you very much, everybody. Sorry to keep you waiting. Complicated business. Complicated. Thank you very much.
-I've just received a call from Secretary Clinton. She congratulated us. It's about us. On our victory, and I congratulated her and her family on a very, very hard-fought campaign.
-I mean, she fought very hard. Hillary has worked very long and very hard over a long period of time, and we owe her a major debt of gratitude for her service to our country.
-I mean that very sincerely. Now it is time for America to bind the wounds of division, have to get together. To all Republicans and Democrats and independents across this nation, I say it is time for us to come together as one united people.
-It is time. I pledge to every citizen of our land that I will be President for all of Americans, and this is so important to me. For those who have chosen not to support me in the past, of which there were a few people, I'm reaching out to you for your guidance and your help so that we can work together and unify our great country.
-<br><br> **Trump's Victory Speech** (2008)*
-
-
-The following table summarizes the results for the different metrics:
-
-
-
-
-| Metrics | Obama | Trump |
-| --- | --- | --- |	
-|Average sentence length (words) |52.67| 11.82|
-| Average syllables per sentence |75.00| 17.59|
-| Average syllables per word |1.42| 1.49|
-| Flesch Reading Ease |32.90| 68.99|
-| Flesch-Kincaid Grade |21.75| 6.57|
-| Gunning Fog index |25.12| 10.10|
-| Sentence Count |3| 17|
-| Syllable Count |225| 299 |
-|Syllables per 100 words| 142.41| 148.76|
-|Type/token ratio| 0.63| 0.54|
-|Words with more than 2 syllables| 16| 27|
-|Words with more than 2 syllables - Percentage| 10.13| 13.43|
-
-
-
-
 
 
 
@@ -143,8 +98,6 @@ The Flesch-Kincaid Grade is a modification of the Flesch Reading Ease index, and
 The Gunning Fog index is yet another readability score. Very closely to the Flesch-Kincaid Grade, it tries to make an estimate of the number of years of formal education needed to understand the text when reading it for the first time. The formula for the Gunning fox index is the following, where “complex words” are defined as the words with 3 or more syllables. 
 
 
-<iframe src="https://prova-robi-cera.herokuapp.com" style=" width: 800px; height: 800px;  overflow: hidden;" scrolling="no"></iframe>
-
 
 ### MTLD and VOC-d
 The MTLD and the VOC-d measures are lexical diversity measures.
@@ -178,34 +131,74 @@ The metric for the CEFR level is computed by analyzing the level of each word us
 * Metadiscourse markers
 
 
-## EXAMPLE
-As an example, let’s consider for instance a small text from Donald Trump and one from Barack Obama and let’s compute the metrics for both. 
-TODO
-- Choose text of Trump
-- Choose text of Obama
-- Apply scripts
+## An initial text comparison: victory speeches
 
-# Map test
+In order to get a first taste of how the metrics work, we will analyze two famous victory speeches by Barack Obama and Donald Trump. The two speeches have one thing in common: they both shocked the world at their times. The former was pronunced in an historic moment of U.S. history, when the first afro-american president was elected. The latter rapresented the victory of one the most controversial candidate of the U.S. modern era, who a lot of people did not expect to win.
+Barack Obama and Donald Trump deal with dialogue in two very different ways. What we want to show is how powerful the metrics are in order to detect this differences automatically. Here are the two extracts from the two speeches, on which we computed the metrics: 
 
-{% include map_test.html %} 
+<br><br>
 
-# Graph test
+> *If there is anyone out there who still doubts that America is a place where all things are possible; who still wonders if the dream of our founders is alive in our time; who still questions the power of our democracy, tonight is your answer.
+It's the answer told by lines that stretched around schools and churches in numbers this nation has never seen; by people who waited three hours and four hours, many for the very first time in their lives, because they believed that this time must be different; that their voice could be that difference.
+It's the answer spoken by young and old, rich and poor, Democrat and Republican, black, white, Latino, Asian, Native American, gay, straight, disabled and not disabled  Americans who sent a message to the world that we have never been a collection of red states and blue states; we are, and always will be, the United States of America.
+<br><br> **Obama's Victory Speech** (2008)*
 
-{% include graph_test.html %} 
+<br><br>
 
-# Academic Prova
+> *Thank you. Thank you very much, everybody. Sorry to keep you waiting. Complicated business. Complicated. Thank you very much.
+I've just received a call from Secretary Clinton. She congratulated us. It's about us. On our victory, and I congratulated her and her family on a very, very hard-fought campaign.
+I mean, she fought very hard. Hillary has worked very long and very hard over a long period of time, and we owe her a major debt of gratitude for her service to our country.
+I mean that very sincerely. Now it is time for America to bind the wounds of division, have to get together. To all Republicans and Democrats and independents across this nation, I say it is time for us to come together as one united people.
+It is time. I pledge to every citizen of our land that I will be President for all of Americans, and this is so important to me. For those who have chosen not to support me in the past, of which there were a few people, I'm reaching out to you for your guidance and your help so that we can work together and unify our great country.
+<br><br> **Trump's Victory Speech** (2008)*
 
-{% include academic_prova.html %} 
 
-# Othe tests
+The following table summarizes the results for the different metrics:
 
-{% include graph_party_test.html %} 
-{% include graph_age_test.html %} 
-{% include graph_congress_test.html %} 
-{% include graph_chamber_test.html %} 
+
+
+
+| Metrics | Obama | Trump |
+| --- | --- | --- |	
+|Average sentence length (words) |52.67| 11.82|
+| Average syllables per sentence |75.00| 17.59|
+| Average syllables per word |1.42| 1.49|
+| Flesch Reading Ease |32.90| 68.99|
+| Flesch-Kincaid Grade |21.75| 6.57|
+| Gunning Fog index |25.12| 10.10|
+| Sentence Count |3| 17|
+| Syllable Count |225| 299 |
+|Syllables per 100 words| 142.41| 148.76|
+|Token count (excluding numbers) | 158| 201|
+|Type count (unique tokens, excluding numbers): 100| 109|
+|Type/token ratio| 0.63| 0.54|
+|Words with more than 2 syllables| 16| 27|
+|Words with more than 2 syllables - Percentage| 10.13| 13.43|
+
 
 
 # Let's start our investigation...
+We are interested into understanding whether there is any significant difference in any of the metrics we defined across the last four presidential candidates, Joe Biden, Donald Trump, Hillary Clinton and Barack Obama. We start by analyzing the number of unique words every 100, 200, 500, 1000, 2000, 5000 and 10000 words for each of the subjects. The number of quotations used is 100000 for each candidate.
+
+IMMAGINE MANCANTE (STATICO) forse
+
+
+{% include freq_words.html %}
+
+Miss Clinton has a mean number of unique words statitically larger than Donald Trump, except for when we consider a very large number of words. Instead, such metric is statistically not different between Trump and Biden. Instead, Obama always outperforms the others in terms of number of unique words.
+
+
+It may be interesting to see which are the most commonly used words for these four politicians. To do so we use the cloud of words graphs.
+
+
+<p align="center">
+ 	<img width="600" height="400" src="https://postimg.cc/14nMGLzP">
+</p>
+
+{% include map_test.html %}
+
+
+
 
 ONE VS ONE COMPARISON
 
@@ -237,5 +230,30 @@ All the three metrics agreed on the significance for all groupings. The results 
 4. Senate Democrats vs Sanate Repubblicans:     non-significant
 5. House Democrats vs Senate Democrats:         non-significant
 6. House Repubblicans vs Senate Repubblicans:   non-significant
+
+
+
+
+
+# Map test
+
+{% include map_test.html %}
+
+# Graph test
+
+{% include graph_test.html %} 
+
+# Academic Prova
+
+{% include academic_prova.html %} 
+
+# Othe tests
+
+{% include graph_party_test.html %} 
+{% include graph_age_test.html %} 
+{% include graph_congress_test.html %} 
+{% include graph_chamber_test.html %} 
+
+<iframe src="https://prova-robi-cera.herokuapp.com" style=" width: 800px; height: 800px;  overflow: hidden;" scrolling="no"></iframe>
 
 
