@@ -234,10 +234,6 @@ Overall, these results show that the metrics are capable of automatically detect
 # Let's start our investigation...
 We are interested into understanding whether there is any significant difference in any of the metrics we defined across the last four presidential candidates, Joe Biden, Donald Trump, Hillary Clinton and Barack Obama. We start by analyzing the number of unique words every 100, 200, 500, 1000, 2000, 5000 and 10000 words for each of the subjects. The number of quotations used is 100000 for each candidate.
 
-<p align="center">
-  	<img img src="https://i.postimg.cc/C11q7p49/frequency.png">
-</p>
-
 
 {% include freq_words.html %}
 
