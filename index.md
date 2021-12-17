@@ -114,7 +114,7 @@ Then, we evaluate TTR sequentially
 |“of the people by the”| 4/5  = 0.8|
 |“of the people by the people” |4 / 6 = 0.667|
 
-Now when a value falls under a certain factor size chosen a priori (in the paper is set to 0.720), we add 1 to the factor count and we reset factor calculations. So we go on like:
+Now when a value falls under a certain factor size chosen a priori (in the paper is set to 0.720), we add 1 to the factor count and we reset factor calculations. So we go on in the following way:
 
 |words string| factor computation|
 |---|---|
@@ -122,7 +122,7 @@ Now when a value falls under a certain factor size chosen a priori (in the paper
 |“for the” |2/2 = 1|
 |“for the people” |3/3 = 1|
 
-When the text ends, usually we have some words left which have not reached the factor size of 0.720. For these last words,, the factor size is calculated on the basis of how far the TTR value has progressed toward the designated default factor size of .720
+When the text ends, usually we have some words left which have not reached the factor size of 0.720. For these last words, the factor size is calculated on the basis of how far the TTR value has progressed towards the designated default factor size of 0.720
 When we have gone through all the text we compute MLD as number of words/factor count
 The computation of MTLD is performed two times, once in left-to-right text order and once in right-to-left text order. The two results are then averaged. 
 
