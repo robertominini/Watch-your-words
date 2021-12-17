@@ -10,7 +10,7 @@
 <!-- [![ada-group-project-spaghetti-carbonada.png](https://i.postimg.cc/jdpBkQLG/ada-group-project-spaghetti-carbonada.png)](https://postimg.cc/dL9WhCRB) -->
 
 # About QuoteBank
-MISSING
+Quotebank is an open corpus of 178 million quotations extracted from 162 million English news articles published in the years between 2008 and 2020. Each quotation is extracted and attributed to the speakers who uttered them thanks to the Quobert model, which is language and corpus-agnostic.  Both Quotebank and Quobert are publicly available at :https://doi.org/10.5281/zenodo.42773118
 
 
 
@@ -51,9 +51,6 @@ different length of phrases
 number of repetitions
 different structuring of the phrases (number of subordinate vs coordinate phrases)
 
-{% include figchemical_2.html %}
-
-{% include figchemical_3.html %}
 
 We plan to investigate whether this difference is present in the US political landscape. In other words, is the language that Republicans use much different than those that Democrats use. 
 
@@ -93,7 +90,6 @@ To provide the reader with an intuition of the meaning of the values, this is a 
 ### Flesch-Kincaid Grade
 The Flesch-Kincaid Grade is a modification of the Flesch Reading Ease index, and has a nice straightforward interpretation: its output represents roughly the number of years of education required to understand the text provided. The formula for the grade is the following:
 
-{% include porco.html %} 
 ### Gunning Fog Index
 The Gunning Fog index is yet another readability score. Very closely to the Flesch-Kincaid Grade, it tries to make an estimate of the number of years of formal education needed to understand the text when reading it for the first time. The formula for the Gunning fox index is the following, where “complex words” are defined as the words with 3 or more syllables. 
 
