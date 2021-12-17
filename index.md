@@ -8,11 +8,6 @@
 
 
 
-
-
-
-
-
 <!-- [![ada-group-project-spaghetti-carbonada.png](https://i.postimg.cc/jdpBkQLG/ada-group-project-spaghetti-carbonada.png)](https://postimg.cc/dL9WhCRB) -->
 
 # About QuoteBank
@@ -329,6 +324,5 @@ prova
 {% include graph_congress_test.html %} 
 {% include graph_chamber_test.html %} 
 
-<iframe src="https://prova-robi-cera.herokuapp.com" style=" width: 800px; height: 800px;  overflow: hidden;" scrolling="no"></iframe>
 
 
