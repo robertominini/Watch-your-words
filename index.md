@@ -192,11 +192,7 @@ It may be interesting to see which are the most commonly used words for these fo
 
 
 
-<p align="center">
-	<a href="https://postimg.cc/14nMGLzP">
-  		<img width="600" height="400" src="https://postimg.cc/14nMGLzP">
-	</a>
-</p>
+[![cloud.png](https://i.postimg.cc/9X1Sh254/cloud.png)](https://postimg.cc/14nMGLzP)
 
 
 {% include map_test.html %}
