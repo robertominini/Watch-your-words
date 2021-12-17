@@ -110,8 +110,8 @@ To provide the reader with an intuition of the meaning of the values, this is a 
 The formula is: 
 
 <p align="center">
-	<a href="https://www.codecogs.com/eqnedit.php?latex=206.835&space;-&space;1.015&space;(\frac{total&space;\;&space;words}{total&space;\;&space;sentences})&space;-&space;84.6(\frac{total&space;\;&space;syllables}{total&space;\;&space;words})" target="_blank">
-		<img src="https://latex.codecogs.com/gif.latex?206.835&space;-&space;1.015&space;(\frac{total&space;\;&space;words}{total&space;\;&space;sentences})&space;-&space;84.6(\frac{total&space;\;&space;syllables}{total&space;\;&space;words})" title="206.835 - 1.015 (\frac{total \; words}{total \; sentences}) - 84.6(\frac{total \; syllables}{total \; words})" />
+	<a href="https://www.codecogs.com/eqnedit.php?latex=206.835&space;-&space;1.015&space;\Bigg(\frac{total&space;\;&space;words}{total&space;\;&space;sentences}\Bigg)&space;-&space;84.6\Bigg(\frac{total&space;\;&space;syllables}{total&space;\;&space;words}\Bigg)" target="_blank">
+		<img src="https://latex.codecogs.com/gif.latex?206.835&space;-&space;1.015&space;\Bigg(\frac{total&space;\;&space;words}{total&space;\;&space;sentences}\Bigg)&space;-&space;84.6\Bigg(\frac{total&space;\;&space;syllables}{total&space;\;&space;words}\Bigg)" title="206.835 - 1.015 \Bigg(\frac{total \; words}{total \; sentences}\Bigg) - 84.6\Bigg(\frac{total \; syllables}{total \; words}\Bigg)" />
 	</a>
 </p>
 
@@ -121,8 +121,8 @@ The formula is:
 The Flesch-Kincaid Grade is a modification of the Flesch Reading Ease index, and has a nice straightforward interpretation: its output represents roughly the number of years of education required to understand the text provided. The formula for the grade is the following:
 
 <p align="center">
-	<a href="https://www.codecogs.com/eqnedit.php?latex=0.39&space;(\frac{total&space;\;&space;words}{total&space;\;&space;sentences})&space;&plus;&space;11.8&space;(\frac{total&space;\;&space;syllables}{total&space;\;&space;words})&space;-15.59" target="_blank">
-		<img src="https://latex.codecogs.com/gif.latex?0.39&space;(\frac{total&space;\;&space;words}{total&space;\;&space;sentences})&space;&plus;&space;11.8&space;(\frac{total&space;\;&space;syllables}{total&space;\;&space;words})&space;-15.59" title="0.39 (\frac{total \; words}{total \; sentences}) + 11.8 (\frac{total \; syllables}{total \; words}) -15.59" />
+	<a href="https://www.codecogs.com/eqnedit.php?latex=0.39&space;\Bigg(\frac{total&space;\;&space;words}{total&space;\;&space;sentences}\Bigg)&space;&plus;&space;11.8&space;\Bigg(\frac{total&space;\;&space;syllables}{total&space;\;&space;words}\Bigg)&space;-15.59" target="_blank">
+		<img src="https://latex.codecogs.com/gif.latex?0.39&space;\Bigg(\frac{total&space;\;&space;words}{total&space;\;&space;sentences}\Bigg)&space;&plus;&space;11.8&space;\Bigg(\frac{total&space;\;&space;syllables}{total&space;\;&space;words}\Bigg)&space;-15.59" title="0.39 \Bigg(\frac{total \; words}{total \; sentences}\Bigg) + 11.8 \Bigg(\frac{total \; syllables}{total \; words}\Bigg) -15.59" />
 	</a>
 </p>
 
