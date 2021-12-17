@@ -19,8 +19,8 @@ Quotebank is an open corpus of 178 million quotations extracted from 162 million
 
 
 <p align="center">
-	<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{2}{4}" target="_blank">
-  		<img src="https://latex.codecogs.com/gif.latex?\frac{2}{4}" title="\frac{2}{4}" />
+	<a href="https://www.codecogs.com/eqnedit.php?latex=206.835&space;-&space;1.015&space;(\frac{total&space;\;&space;words}{total&space;\;&space;sentences})&space;-&space;84.6(\frac{total&space;\;&space;syllables}{total&space;\;&space;words})" target="_blank">
+		<img src="https://latex.codecogs.com/gif.latex?206.835&space;-&space;1.015&space;(\frac{total&space;\;&space;words}{total&space;\;&space;sentences})&space;-&space;84.6(\frac{total&space;\;&space;syllables}{total&space;\;&space;words})" title="206.835 - 1.015 (\frac{total \; words}{total \; sentences}) - 84.6(\frac{total \; syllables}{total \; words})" />
 	</a>
 </p>
 
