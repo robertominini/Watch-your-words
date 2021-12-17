@@ -213,7 +213,9 @@ Overall, these results show that the metrics are capable of automatically detect
 # Let's start our investigation...
 We are interested into understanding whether there is any significant difference in any of the metrics we defined across the last four presidential candidates, Joe Biden, Donald Trump, Hillary Clinton and Barack Obama. We start by analyzing the number of unique words every 100, 200, 500, 1000, 2000, 5000 and 10000 words for each of the subjects. The number of quotations used is 100000 for each candidate.
 
-IMMAGINE MANCANTE (STATICO) forse
+<p align="center">
+  	<img img src="https://i.postimg.cc/C11q7p49/frequency.png">
+</p>
 
 
 {% include freq_words.html %}
@@ -232,24 +234,17 @@ We can notice that there are some words in common for each of them, such as "peo
 
 Now we want to dig deeper into the most commonly used words. In particular, thanks to the word frequency dataset and the level_score funciton previously defined, we want to assess the distribution of "academic" domain words against "spoken" domain ones, among the most commonly used words.
 
-<p align="center">
+<p align="center"> DA CAMBIARE - LABEL MANCANTI
   	<img img src="https://i.postimg.cc/qBLfvnnv/academic-spoken.png">
 </p>
 
 
-{% include academic_words.html %}
+{% include academic_words.html %} LABEL E STEP MANCANTI
 
-{% include spoken_words.html %}
+{% include spoken_words.html %} LABEL E STEP MANCANTI
 
-{% include api_important.html %}
+{% include api_important.html %} LABEL E STEP MANCANTI
 
-
-
-ONE VS ONE COMPARISON
-
-CLOUDS OF WORDS
-
-FAMOUS POLITICIANS
 
 # Aggregate comparisons
 
