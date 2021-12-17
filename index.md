@@ -287,6 +287,8 @@ Finally, we use the metrics computed with the API.
 
 MAP, AGE, PARTY ...
 
+{% include hist_party_test.html %}
+
 ### Hypothesis Testing
 
 In this section, we check whether there is a significant difference in language within these 6 different groupings:
