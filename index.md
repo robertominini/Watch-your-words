@@ -352,11 +352,15 @@ Focusing on the aggregated Flesch Reading Ease scores we noticed a slight tenden
 
 We also created a discrete score for each state for Flesch Reading Ease distinguishing between low and high average scores, setting the threshold as the average Flesch Reading Ease for Democrats. We plot these values in the map below.
 
+{% map_discrete.html %}
 
+If we compare the map we've just shown with the result of the 2016 presidential election we can draw an interesting parallel between the states where the candidates speak good english and those where Democrats have won. 
 
-
-
-
+<p align="center">
+	<a href="https://www.youtube.com/watch?v=phsU1vVHOQI">
+  		<img width="600" height="400" alt="trump-youtube" src="https://i.postimg.cc/QVGYgbNz/Whats-App-Image-2021-12-17-at-23-52-15.jpg">
+	</a>
+</p>
 
 
 
