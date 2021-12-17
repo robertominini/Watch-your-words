@@ -232,8 +232,20 @@ It may be interesting to see which are the most commonly used words for these fo
 </p>
 
 
-{% include map_test.html %}
+We can notice that there are some words in common for each of them, such as "people", "president" or "country", while some others are not used by them all, for example "women" used frequently by Hillary Clinton, or "China", "border", "wall" used by Donald Trump.
 
+Now we want to dig deeper into the most commonly used words. In particular, thanks to the word frequency dataset and the level_score funciton previously defined, we want to assess the distribution of "academic" domain words against "spoken" domain ones, among the most commonly used words.
+
+<p align="center">
+  	<img img src="https://i.postimg.cc/qBLfvnnv/academic-spoken.png">
+</p>
+
+
+{% include academic_words.html %}
+
+{% include spoken_words.html %}
+
+{% include api_important.html %}
 
 
 
