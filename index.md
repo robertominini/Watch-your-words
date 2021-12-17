@@ -90,6 +90,7 @@ The first three metrics estimate very similar things, using them all together al
 
 ### Flesch reading-ease
 The Flesch reading-ease index is a measure for the “readability” of a text. The higher the score, the “simpler” the text, and the easier it is to read. (Hence, in our analysis, a high score indicates that the politician has a very simple language. It can be correlated either with a lack of education or with a willingness to be understood by everybody!).
+<br>
 The formula for the Flesch reading-ease score is the following: 
 
 To provide the reader with an intuition of the meaning of the values, this is a rough correspondence between the values of the index with the school level at which that property of speech is achieved.
@@ -106,8 +107,8 @@ To provide the reader with an intuition of the meaning of the values, this is a 
 |30.0–10.0	|College graduate|	Very difficult to read. Best understood by university graduates.|
 |10.0–0.0	|Professional	|Extremely difficult to read. Best understood by university graduates.|
 
-
-The formula is: 
+<br>
+The formula to compute the is Flesch reading-ease: 
 
 <p align="center">
 	<a href="https://www.codecogs.com/eqnedit.php?latex=206.835&space;-&space;1.015&space;\Bigg(\frac{total&space;\;&space;words}{total&space;\;&space;sentences}\Bigg)&space;-&space;84.6\Bigg(\frac{total&space;\;&space;syllables}{total&space;\;&space;words}\Bigg)" target="_blank">
