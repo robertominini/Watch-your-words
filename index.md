@@ -312,7 +312,11 @@ All the three metrics agreed on the significance for all groupings. The results 
 <iframe src="https://prova-robi-cera.herokuapp.com" style=" width: 800px; height: 800px;  overflow: hidden;" scrolling="no"></iframe>
 
 
-
+# Grafici artu
+{% include graph_age_flesh_ease.html %}
+{% include graph_chamber_flesh_ease.html %}
+{% include graph_chamber_flesh_grade.html %}
+{% include graph_chamber_gunning_fox.html %}
 
 
 
