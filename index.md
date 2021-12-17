@@ -265,3 +265,48 @@ Finally, we use the metrics computed with the API.
 
 {% include api_important.html %}
 
+
+# Aggregate comparisons
+
+
+
+## Democrats vs Republicans
+
+## House vs Senate
+
+## Grouped by age of birth
+
+## Grouped by congress 
+
+MAP, AGE, PARTY ...
+
+{% include hist_party_test.html %}
+
+### Hypothesis Testing
+
+In this section, we check whether there is a significant difference in language within these 6 different groupings:
+
+1. Democrats vs Repubblicans
+2. House members vs Senate member
+3. House Democrats vs House Repubblicans
+4. Senate Democrats vs Sanate Repubblicans
+5. House Democrats vs Senate Democrats
+6. House Repubblicans vs Senate Repubblicans
+
+
+All the three metrics agreed on the significance for all groupings. The results of the tests are:
+
+1. Democrats vs Repubblicans:                 **significant**
+2. House members vs Senate member:              non-significant
+3. House Democrats vs House Repubblicans:     **significant**
+4. Senate Democrats vs Sanate Repubblicans:     non-significant
+5. House Democrats vs Senate Democrats:         non-significant
+6. House Repubblicans vs Senate Repubblicans:   non-significant
+
+
+
+
+
+
+
+
