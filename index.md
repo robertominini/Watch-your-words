@@ -54,6 +54,9 @@ different structuring of the phrases (number of subordinate vs coordinate phrase
 
 We plan to investigate whether this difference is present in the US political landscape. In other words, is the language that Republicans use much different than those that Democrats use. 
 
+
+# Initial exploration: what data do we have?
+
 # How do we measure?
 The question is: how can we measure the lexical level of a person from their quotes? Basically we aggregated many quotes (2000 on average!) for each politician, extracted randomly if they had more than that, in order to create a text. Then, we used some metrics to evaluate the text. To conduct our analysis on the politicians' words we will use seven different metrics.
 
