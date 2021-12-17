@@ -108,7 +108,7 @@ To provide the reader with an intuition of the meaning of the values, this is a 
 |30.0–10.0	|College graduate|	Very difficult to read. Best understood by university graduates.|
 |10.0–0.0	|Professional	|Extremely difficult to read. Best understood by university graduates.|
 
-$ \dfrac{2}{3}    $
+$dfrac{2}{3}$
 
 ### Flesch-Kincaid Grade
 The Flesch-Kincaid Grade is a modification of the Flesch Reading Ease index, and has a nice straightforward interpretation: its output represents roughly the number of years of education required to understand the text provided. The formula for the grade is the following:
