@@ -352,7 +352,7 @@ Focusing on the aggregated Flesch Reading Ease scores we noticed a slight tenden
 
 We also created a discrete score for each state for Flesch Reading Ease distinguishing between low and high average scores, setting the threshold as the average Flesch Reading Ease for Democrats. We plot these values in the map below.
 
-{% map_discrete.html %}
+
 
 
 
@@ -381,7 +381,6 @@ All the three metrics agreed on the significance for all groupings. The results 
 5. House Democrats vs Senate Democrats:         non-significant
 6. House Repubblicans vs Senate Republicans:   non-significant
 
-end
 
 
 
