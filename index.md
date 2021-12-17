@@ -280,7 +280,7 @@ Finally, we use the metrics computed with the API.
 
 MAP, AGE, PARTY ...
 
-{% include hist_party_test.html %}
+
 
 ### Hypothesis Testing
 
@@ -305,6 +305,25 @@ All the three metrics agreed on the significance for all groupings. The results 
 
 
 
+prova
+
+# Graph test
+
+{% include graph_test.html %} 
+
+# Academic Prova
+
+{% include academic_prova.html %} 
+
+# Othe tests
+
+{% include graph_party_test.html %} 
+{% include graph_age_test.html %} 
+{% include graph_congress_test.html %} 
+{% include graph_chamber_test.html %} 
+
+
+<iframe src="https://prova-robi-cera.herokuapp.com" style=" width: 800px; height: 800px;  overflow: hidden;" scrolling="no"></iframe>
 
 
 
