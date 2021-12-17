@@ -36,6 +36,35 @@ It is time. I pledge to every citizen of our land that I will be President for a
 
 
 
+
+
+| Metrics | Obama) | Trump |
+| --- | --- | --- |	
+|Average sentence length (words) |52.67| 11.82|
+| Average syllables per sentence |75.00| 17.59|
+| Average syllables per word |1.42| 1.49|
+| Digits Excluded? |false| false|
+| Flesch Reading Ease |32.90| 68.99|
+| Flesch-Kincaid Grade |21.75| 6.57|
+| Gunning Fog index |25.12| 10.10|
+| Number Count |0| 0|
+| Sentence Count |3| 17|
+| Syllable Count |225| 299 |
+|Syllables per 100 words| 142.41| 148.76|
+|Token count (excluding numbers) | 158| 201|
+|Total Digits Count | 0 | 0|
+|Type count (unique tokens, excluding numbers): 100| 109|
+|Type/token ratio'| 0.63| 0.54|
+|Words with more than 2 syllables| 16| 27|
+|Words with more than 2 syllables - Percentage| 10.13| 13.43|
+
+
+
+
+
+
+
+
 # Framing our research
 
 
