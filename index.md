@@ -1,3 +1,13 @@
+	
+<p align="center">
+	<a href="https://postimg.cc/dL9WhCRB">
+  		<img img src="https://i.postimg.cc/jdpBkQLG/ada-group-project-spaghetti-carbonada.png">
+	</a>
+</p>
+
+
+
+
 
 
 
@@ -13,7 +23,11 @@ Quotebank is an open corpus of 178 million quotations extracted from 162 million
 
 # Framing our research
 
-
+<p align="center">
+	<a href="https://i.postimg.cc/JzRhLGmp/matteo-vs-matteo.png">
+  		<img width="600" height="400" src="https://i.postimg.cc/JzRhLGmp/matteo-vs-matteo.png">
+	</a>
+</p>
 
 
 
@@ -25,6 +39,11 @@ Renzi and Salvini are not alone, indeed we found that such differences can be fo
 <!--- [![trump-youtube.png](https://i.postimg.cc/GmFFmBZV/trump-youtube.png)](https://www.youtube.com/watch?v=phsU1vVHOQI) -->
 
 
+<p align="center">
+	<a href="https://www.youtube.com/watch?v=phsU1vVHOQI">
+  		<img width="600" height="400" alt="trump-youtube" src="https://i.postimg.cc/GmFFmBZV/trump-youtube.png">
+	</a>
+</p>
 
 
 
