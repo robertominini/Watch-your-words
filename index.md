@@ -102,6 +102,31 @@ The Gunning Fog index is yet another readability score. Very closely to the Fles
 ### MTLD and VOC-d
 The MTLD and the VOC-d measures are lexical diversity measures.
 
+
+#### MLTD
+
+The idea behind the MTLD is a sequential evaluation of TTR, where TTR is defined as the number of unique words / total number of words. Suppose we have the text: “of the people by the people for  the people”.
+We initially define a variable, factor count, to value 0.
+Then, we evaluate TTR sequentially 
+“of” 1/1 = 1
+“of the” 2 / 2 = 1
+“of the people”  3/3 = 1
+“of the people by” 4/4 = 1
+“of the people by the” 4/5  = 0.8
+“of the people by the people” 4 / 6 = 0.667
+
+Now when a value falls under a certain factor size chosen a priori (in the paper is set to 0.720), we add 1 to the factor count and we reset factor calculations. So we go on like:
+
+“for” 1/1 = 1
+“for the” 2/2 = 1
+“for the people” 3/3 = 1
+
+When the text ends, usually we have some words left which have not reached the factor size of 0.720. For these last words,, the factor size is calculated on the basis of how far the TTR value has progressed toward the designated default factor size of .720
+When we have gone through all the text we compute MLD as number of words/factor count
+The computation of MTLD is performed two times, once in left-to-right text order and once in right-to-left text order. The two results are then averaged. 
+
+
+
 #### VOC-d
 In order to calculate the VOC-d metric we follow the following steps:
 1. From the text, we take 100 samples made of 35 tokens.
