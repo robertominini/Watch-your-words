@@ -266,6 +266,16 @@ Finally, we use the metrics computed with the API.
 
 ## Democrats vs Republicans
 
+{% include hist_party.html %}
+{% include graph_chamber_flesh_ease.html %}
+{% include graph_chamber_flesh_grade.html %}
+{% include graph_chamber_gunning_fox.html %}
+{% include graph_age_flesh_ease.html %}
+{% include graph_age_flesh_ease_2.html %}
+{% include graph_congress_flesh_ease.html %}
+{% include graph_congress_flesh_ease_2.html %}
+
+
 ## House vs Senate
 
 ## Grouped by age of birth
@@ -306,16 +316,6 @@ All the three metrics agreed on the significance for all groupings. The results 
 <iframe src="https://prova-robi-cera.herokuapp.com" style=" width: 800px; height: 800px;  overflow: hidden;" scrolling="no"></iframe>
 
 
-# Grafici Artu secondo la lista
-
-{% include hist_party.html %}
-{% include graph_chamber_flesh_ease.html %}
-{% include graph_chamber_flesh_grade.html %}
-{% include graph_chamber_gunning_fox.html %}
-{% include graph_age_flesh_ease.html %}
-{% include graph_age_flesh_ease_2.html %}
-{% include graph_congress_flesh_ease.html %}
-{% include graph_congress_flesh_ease_2.html %}
 
 
 
