@@ -271,7 +271,7 @@ It may be interesting to see which are the most commonly used words for these fo
 
 We can notice that there are some words in common for each of them, such as "people", "president" or "country", while some others are not used by them all, for example "women" used frequently by Hillary Clinton, or "China", "border", "wall" used by Donald Trump.
 
-Now we want to dig deeper into the most commonly used words. In particular, thanks to the word frequency dataset and the level_score funciton previously defined, we want to assess the distribution of "academic" domain words against "spoken" domain ones, among the most commonly used words.
+Now we want to dig deeper into the most commonly used words. In particular, thanks to the word frequency dataset and the level_score function previously defined, we want to assess the distribution of "academic" domain words against "spoken" domain ones, among the most commonly used words.
 
 <p align="center">
   	<img img src="https://i.postimg.cc/YqRPP1Ng/academic-spoken.png">
@@ -311,22 +311,22 @@ MAP, AGE, PARTY ...
 
 In this section, we check whether there is a significant difference in language within these 6 different groupings:
 
-1. Democrats vs Repubblicans
+1. Democrats vs Republicans
 2. House members vs Senate member
-3. House Democrats vs House Repubblicans
-4. Senate Democrats vs Sanate Repubblicans
+3. House Democrats vs House Republicans
+4. Senate Democrats vs Sanate Republicans
 5. House Democrats vs Senate Democrats
-6. House Repubblicans vs Senate Repubblicans
+6. House Repubblicans vs Senate Republicans
 
 
 All the three metrics agreed on the significance for all groupings. The results of the tests are:
 
-1. Democrats vs Repubblicans:                 **significant**
+1. Democrats vs Republicans:                 **significant**
 2. House members vs Senate member:              non-significant
-3. House Democrats vs House Repubblicans:     **significant**
-4. Senate Democrats vs Sanate Repubblicans:     non-significant
+3. House Democrats vs House Republicans:     **significant**
+4. Senate Democrats vs Sanate Republicans:     non-significant
 5. House Democrats vs Senate Democrats:         non-significant
-6. House Repubblicans vs Senate Repubblicans:   non-significant
+6. House Repubblicans vs Senate Republicans:   non-significant
 
 
 
