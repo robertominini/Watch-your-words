@@ -191,9 +191,13 @@ Miss Clinton has a mean number of unique words statitically larger than Donald T
 It may be interesting to see which are the most commonly used words for these four politicians. To do so we use the cloud of words graphs.
 
 
+
 <p align="center">
- 	<img width="600" height="400" src="https://postimg.cc/14nMGLzP">
+	<a href="https://postimg.cc/14nMGLzP">
+  		<img width="600" height="400" src="https://postimg.cc/14nMGLzP">
+	</a>
 </p>
+
 
 {% include map_test.html %}
 
