@@ -253,6 +253,14 @@ FAMOUS POLITICIANS
 
 # Aggregate comparisons
 
+## Democrats vs Repubblicans
+
+## House vs Senate
+
+## Grouped by age of birth
+
+## Grouped by congress 
+
 MAP, AGE, PARTY ...
 
 ### Hypothesis Testing
@@ -279,10 +287,6 @@ All the three metrics agreed on the significance for all groupings. The results 
 
 
 
-
-# Map test
-
-{% include map_test.html %}
 
 # Graph test
 
