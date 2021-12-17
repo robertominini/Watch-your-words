@@ -49,8 +49,6 @@ The following table summarizes the results for the different metrics:
 | Sentence Count |3| 17|
 | Syllable Count |225| 299 |
 |Syllables per 100 words| 142.41| 148.76|
-|Token count (excluding numbers) | 158| 201|
-|Type count (unique tokens, excluding numbers): 100| 109|
 |Type/token ratio| 0.63| 0.54|
 |Words with more than 2 syllables| 16| 27|
 |Words with more than 2 syllables - Percentage| 10.13| 13.43|
