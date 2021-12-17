@@ -253,7 +253,7 @@ FAMOUS POLITICIANS
 
 # Aggregate comparisons
 
-## Democrats vs Repubblicans
+## Democrats vs Republicans
 
 ## House vs Senate
 
