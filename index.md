@@ -7,6 +7,14 @@
 
 
 
+<p align="center">
+	<a href="https://postimg.cc/dL9WhCRB">
+  		<img src="https://latex.codecogs.com/gif.latex?O_t=\text { Onset event at time bin } t " /> 
+	</a>
+</p>
+
+
+
 
 <!-- [![ada-group-project-spaghetti-carbonada.png](https://i.postimg.cc/jdpBkQLG/ada-group-project-spaghetti-carbonada.png)](https://postimg.cc/dL9WhCRB) -->
 
