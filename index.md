@@ -66,28 +66,28 @@ We plan to investigate whether this difference is present in the US political la
 
 We can notice the politicians taken into account are balanced between Democrats and Republicans. Clearly there are many more Congressmen than Senators as it's natural given the House of Representatives is composed by 435 members, while the Senate includes only 100 individuals. Age-wise we can see that the majority of US Representatives included in our metrics were born in the 50s and 60s, and only 115 out of 539 considered were born in the 70s or later. Naturally by the way each congressman is assigned to a number of congress the 114th is the most represented. 58 is the number of politicians considered who were first elected in 2016 (first mandate during the 115th Congress), while this number increases to 77 for the midterm elections of 2018. (For the sunburst graphs, click on the charts to visualize the details!)
 
-## Proportion of politicians in each state
+### Proportion of politicians in each state
 {% include pie_state.html %} 
-## Proportion of politicians by party, chamber and birth date (40s = born in the 1940s)
+### Proportion of politicians by party, chamber and birth date (40s = born in the 1940s)
 {% include sunburst_1.html %}
-## Proportion of politicians by chamber and birth date
+### Proportion of politicians by chamber and birth date
 {% include sunburst_2.html %}
-## Proportion of politicians by chamber, party and birth date
+### Proportion of politicians by chamber, party and birth date
 {% include sunburst_3.html %}
 
 
 
 # How do we measure?
-The question is: how can we measure the lexical level of a person from their quotes? Basically we aggregated many quotes (2000 on average!) for each politician, extracted randomly if they had more than that, in order to create a text. Then, we used some metrics to evaluate the text. To conduct our analysis on the politicians' words we will use seven different metrics.
+The question is: how can we measure the lexical level of a person from their quotes? Basically we aggregated many quotes (2000 on average!) for each politician, extracted randomly if they had more than that, in order to create a text. Then, we used some metrics to evaluate the text. To conduct our analysis on the politicians' words we will use six different metrics.
 
 The metrics we used are the following:
-Flesch reading-ease
-Flesch-Kincaid Grade
-Gunning Fog Index
-MTLD
-VOC-d
-CEFR Level
-Number of unique words in a certain word window
+
+* Flesch reading-ease
+* Flesch-Kincaid Grade
+* Gunning Fog Index
+* MTLD
+* VOC-d
+* Number of unique words in a certain word window
 
 The first three metrics estimate very similar things, using them all together allowed us to build a more robust measure. 
 
@@ -140,6 +140,14 @@ The Gunning Fog index is yet another readability score. Very closely to the Fles
 
 
 
+
+
+<p align="center">
+	<a href="https://www.codecogs.com/eqnedit.php?latex=0.4\Bigg[\Bigg(\frac{words}{sentences}\Bigg)&plus;100\Bigg(\frac{complex&space;\;&space;words}{words}\Bigg)\Bigg]" target="_blank">
+		<img src="https://latex.codecogs.com/gif.latex?0.4\Bigg[\Bigg(\frac{words}{sentences}\Bigg)&plus;100\Bigg(\frac{complex&space;\;&space;words}{words}\Bigg)\Bigg]" title="0.4\Bigg[\Bigg(\frac{words}{sentences}\Bigg)+100\Bigg(\frac{complex \; words}{words}\Bigg)\Bigg]" />
+	</a>
+</p>
+
 ### MTLD and VOC-d
 The MTLD and the VOC-d measures are lexical diversity measures.
 
@@ -189,17 +197,6 @@ In order to calculate the VOC-d metric we follow the following steps:
 ### Unique words
 This is yet another diversity metric that we implemented from scratch. Given a certain window of words taken into consideration, for instance 1000 words, how many unique words does the person use? This measure gives a rough estimate of the lexical diversity of the speaker. 
 
-### CEFR Level
-Finally, thanks to the help of an API, we managed also to estimate the English level of the speaker (CEFR Level) in a scale from A1 to B2.
-The metric for the CEFR level is computed by analyzing the level of each word used in a text.  The same word might also have different levels based on how it is used. For example, hunt as a verb for killing animals is B1, hunt as a verb for searching someone or something is B2, while hunt as a noun is C2. In this case, we consider each word for the lowest level (in the case of the example, B1). Once the level of each word is determined, this information is aggregated and used to produce the final estimate of the language level of the text. The computation takes into account around 30 different metrics, metrics such as:
-
-* Statistics/Syllables
-* Lexical diversity
-* Lexical Sophistication: English Vocabulary Profile (incl. % of words at each level)
-* Lexical Sophistication: British National Corpus
-* Lexical Sophistication: Corpus of Contemporary American English
-* Lexical Sophistication: Academic Word List
-* Metadiscourse markers
 
 
 ## An initial text comparison: victory speeches
