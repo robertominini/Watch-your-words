@@ -75,7 +75,11 @@ We can notice the politicians taken into account are balanced between Democrats 
 ### Proportion of politicians by chamber, party and birth date
 {% include sunburst_3.html %}
 
-
+We can notice various things: 
+1. From the first graph we notice that the percentage of members of each party belonging to the House of Representatives is mostly consistent between Democrats and Republicans 224 to 218, while Republicans count 56 senators v. 41 for the Dem in our dataset. 
+Democrats in both chambers seem to have a younger range of representatives. for example those born after the 60s represent the most popoulous group at the House of Representatives among Democrats, while they only figure on 3rd place for Republicans (57 v. 49)
+2. The Senate is composed (naturally given the Corsus Honorum strongly felt in the US) by older people. In particular people born in the 40s or earlier represent just 17% in the House of Representatives versus one third of the Senate. 
+3. In this last one we can see even more clearly what said for the first suburst graph. Especially if we select by clicking on the particular sections of the circle Democrats>House and compare to Republicans>House
 
 # How do we measure?
 The question is: how can we measure the lexical level of a person from their quotes? Basically we aggregated many quotes (2000 on average!) for each politician, extracted randomly if they had more than that, in order to create a text. Then, we used some metrics to evaluate the text. To conduct our analysis on the politicians' words we will use six different metrics.
@@ -139,8 +143,7 @@ The Flesch-Kincaid Grade is a modification of the Flesch Reading Ease index, and
 The Gunning Fog index is yet another readability score. Very closely to the Flesch-Kincaid Grade, it tries to make an estimate of the number of years of formal education needed to understand the text when reading it for the first time. The formula for the Gunning fox index is the following, where “complex words” are defined as the words with 3 or more syllables. 
 
 
-
-
+<br><br>
 
 <p align="center">
 	<a href="https://www.codecogs.com/eqnedit.php?latex=0.4\Bigg[\Bigg(\frac{words}{sentences}\Bigg)&plus;100\Bigg(\frac{complex&space;\;&space;words}{words}\Bigg)\Bigg]" target="_blank">
@@ -167,7 +170,7 @@ Then, we evaluate TTR sequentially
 |“of the people by the”| 4/5  = 0.8|
 |“of the people by the people” |4 / 6 = 0.667|
 
-Now when a value falls under a certain factor size chosen a priori (in the paper is set to 0.720), we add 1 to the factor count and we reset factor calculations. So we go on in the following way:
+Now when a value falls under a certain factor size chosen a priori (in [This](https://pubmed.ncbi.nlm.nih.gov/20479170/) famous paper it is set to 0.720), we add 1 to the factor count and we reset factor calculations. So we go on in the following way:
 
 |words string| factor computation|
 |---|---|
@@ -182,7 +185,7 @@ The computation of MTLD is performed two times, once in left-to-right text order
 
 
 #### VOC-d
-In order to calculate the VOC-d metric we follow the following steps:
+In order to calculate the VOC-d metric, the following steps are taken:
 1. From the text, we take 100 samples made of 35 tokens.
 2. For each of these samples, we compute the Type-to-Token ratio (TTR). TTR is the ratio obtained by dividing the types (the total number of different words) occurring in a text by  its tokens (the total number of words).
 3. We calculate the mean TTR of the the 100 samples.
@@ -249,8 +252,7 @@ Overall, these results show that the metrics are capable of automatically detect
 
 
 # Let's start our investigation...
-We are interested into understanding whether there is any significant difference in any of the metrics we defined across the last four presidential candidates, Joe Biden, Donald Trump, Hillary Clinton and Barack Obama. We start by analyzing the number of unique words every 100, 200, 500, 1000, 2000, 5000 and 10000 words for each of the subjects. The number of quotations used is 100000 for each candidate.
-
+The scope of our analysis is to apply a quantitative approach to the analysis of lexical levels of various prominent U.S. politicians. In particular we firstly applied the above-mentioned metrics to understand whether there is any significant difference in the lexical level of the last four presidential candidates, Joe Biden, Donald Trump, Hillary Clinton and Barack Obama. We start by analyzing the number of unique words every 100, 200, 500, 1000, 2000, 5000 and 10000 words for each of the subjects. The number of quotations used is 100000 for each candidate.
 
 {% include freq_words.html %}
 
@@ -266,7 +268,7 @@ It may be interesting to see which are the most commonly used words for these fo
 
 We can notice that there are some words in common for each of them, such as "people", "president" or "country", while some others are not used by them all, for example "women" used frequently by Hillary Clinton, or "China", "border", "wall" used by Donald Trump.
 
-Now we want to dig deeper into the most commonly used words. In particular, thanks to the word frequency dataset and the level_score function previously defined, we want to assess the distribution of "academic" domain words against "spoken" domain ones, among the most commonly used words.
+Now we want to dig deeper into the most commonly used words. In particular, thanks to the word frequency dataset and the level_score function previously defined, we want to assess the distribution of "academic" domain words against "spoken" domain ones, among the most commonly used words. The graphs below show for each of the four personalities considered the number of words belonging to an academic or spoken domain included in the top n most used words by each.
 
 <p align="center">
   	<img img src="https://i.postimg.cc/YqRPP1Ng/academic-spoken.png">
@@ -289,15 +291,38 @@ Finally, we use the metrics computed with the API.
 # Aggregate comparisons
 
 
-
 ## Democrats vs Republicans
 
+We now want to shift our attention to comparing groups of politicians, which was essentially the goal of this whole project. We would like to investigate whether the trends seen in the individual comparisons we draw in the previous section can be extended to more general tendencies. We will compare aggregate measures of Senators and Congressmen (with quotes included inside Quotebank) grouped by party, branch of Congress, age, state of election and other...
+We start by analyzing the distribution of `Flesh_Reading_Ease` scores across the two major parties.
+
 {% include hist_party.html %}
+
+We can notice that the distribution of the scores are shifted to the right for Republicans, which can be interpreted (using the definition of the Flesh Reading Ease Score) by saying that Republicans in general use more simple sentences constructions. To verify the soundness of such hypothesis we ran a t-test.
+
+With a p-value of 0.0003 we can safely reject the null-hypothesis stating there is no statistical difference between the `Flesh Reading Ease` scores of Republicans and Democrats. We would like to know if the other two metric are consistent, to do that we run other two t-test which confirm the same hypothesis on `Flesch-Kincaid Grade` and `Gunning Fog Index` scores; in general Democrats appear to use more structured phrase constructions.
+
+Now that we have confirmed that there is indeed a significant difference between Republicans and Democrats we asked ourselves whether there other significant differences besides the one between parties. 
+
+To do so we first need to create the necessary datasets to analyse the data aggregated in different ways, which we do in the cell below.
+
+In particular we want to analyse possible differences between the two branches of the Congress, between age groups and for first appearance in Congress. Given we rejected the null hypothesis stating that there is no difference in the lexic of Democrats and Republicans, in all analyses we will take into account the difference between Republicans and Democrats and therefore analyse possible differences only across individuals of the same party. 
+We start by analyzing possible differences between the two branches of Congress: Senate and House of Representatives. Here below we plot barcharts for the three readibility metrics.
+
 {% include graph_chamber_flesh_ease.html %}
 {% include graph_chamber_flesh_grade.html %}
 {% include graph_chamber_gunning_fox.html %}
+
+From the 3 graphs above we can see that the only difference remain between the two different parties while for all three measure of lexical level there is no difference between Senators and Representatives inside the same party.
+
+## Is there a difference between age groups?
+
+The next questions we asked ourselves was: is there any significant difference between age groups? To answer that we used the same approach as done with parliament branches and compared values for each age group splitted between Democrats and Republicans.
+
 {% include graph_age_flesh_ease.html %}
 {% include graph_age_flesh_ease_2.html %}
+
+
 {% include graph_congress_flesh_ease.html %}
 {% include graph_congress_flesh_ease_2.html %}
 
@@ -306,7 +331,7 @@ Finally, we use the metrics computed with the API.
 
 ## House vs Senate
 
-## Grouped by age of birth
+
 
 ## Grouped by congress 
 
