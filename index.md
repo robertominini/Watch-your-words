@@ -56,6 +56,11 @@ We plan to investigate whether this difference is present in the US political la
 
 
 # Initial exploration: what data do we have?
+INSERIRE PIE CHARTS E DISTRIBUTIONS
+
+
+
+
 
 # How do we measure?
 The question is: how can we measure the lexical level of a person from their quotes? Basically we aggregated many quotes (2000 on average!) for each politician, extracted randomly if they had more than that, in order to create a text. Then, we used some metrics to evaluate the text. To conduct our analysis on the politicians' words we will use seven different metrics.
@@ -237,16 +242,16 @@ We can notice that there are some words in common for each of them, such as "peo
 
 Now we want to dig deeper into the most commonly used words. In particular, thanks to the word frequency dataset and the level_score funciton previously defined, we want to assess the distribution of "academic" domain words against "spoken" domain ones, among the most commonly used words.
 
-<p align="center"> DA CAMBIARE - LABEL MANCANTI
-  	<img img src="https://i.postimg.cc/qBLfvnnv/academic-spoken.png">
+<p align="center">
+  	<img img src="https://i.postimg.cc/YqRPP1Ng/academic-spoken.png">
 </p>
 
 
-{% include academic_words.html %} LABEL E STEP MANCANTI
+{% include academic_words.html %}
 
-{% include spoken_words.html %} LABEL E STEP MANCANTI
+{% include spoken_words.html %}
 
-{% include api_important.html %} LABEL E STEP MANCANTI
+{% include api_important.html %}
 
 
 # Aggregate comparisons
