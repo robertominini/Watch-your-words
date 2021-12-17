@@ -275,7 +275,7 @@ Finally, we use the metrics computed with the API.
 
 # Aggregate comparisons
 
-{% hist_party_test.html %}
+
 
 ## Democrats vs Republicans
 
