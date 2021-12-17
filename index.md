@@ -327,5 +327,7 @@ prova
 
 
 
+{% include hist_party_test.html %}
+
 
 
