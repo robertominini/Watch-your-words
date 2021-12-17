@@ -206,6 +206,13 @@ The following table summarizes the results for the different metrics:
 |Words with more than 2 syllables - Percentage| 10.13| 13.43|
 
 
+We can see that a lot of metrics are very different. The average sentence length is much longer for Obama. Moreover, all of the three readability metrics agree on the fact that the English level of Obama’s speech is more advanced (The Flesch Reading Ease is lower, while the Flesch-Kincaid Grade and the Gunning Fog index are higher). 
+The sentence count difference is also quite stark: Obama used three sentences, while Trump used 17. However Trump used more syllables overall.  
+Also, Obama has a higher type to token ratio, so that means that he used a higher proportion of unique words than Trump. 
+Overall, these results show that the metrics are capable of automatically detecting the lexical differences between the two texts in an automated way.
+
+
+
 
 # Let's start our investigation...
 We are interested into understanding whether there is any significant difference in any of the metrics we defined across the last four presidential candidates, Joe Biden, Donald Trump, Hillary Clinton and Barack Obama. We start by analyzing the number of unique words every 100, 200, 500, 1000, 2000, 5000 and 10000 words for each of the subjects. The number of quotations used is 100000 for each candidate.
