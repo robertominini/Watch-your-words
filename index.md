@@ -278,20 +278,19 @@ We now move to interactive bar charts to better show what happens.
 
 {% include academic_words.html %}
 
-Also here, Obama is the one with the highest average number of academic words in every case. Also we notice that from considering the most used 100 words and above the relative frequency among the politicians seems to converge in this order of frequency of academic words: Obama, Biden, Clinton, Trump.
+Also here, Obama is the one with the highest average number of academic words in every case. Also we notice that from considering the most used 100 words and above, the relative frequency among the politicians seems to converge in this order of frequency of academic words: Obama, Biden, Clinton, Trump.
 
 {% include spoken_words.html %}
-Also in this case, a part from the first case with the top 25 words, Obama is clearly the one farthest from the others, with a lower frequency of spoken domain words. Joe Biden is quite steadily the one with the highest average number of spoken language words, while for Clinton and Trump we can perform a Wald test to assess when their results are statistically different.
+Also considering spoken domain words, apart from the first case with the top 25 words, Obama is clearly the one farthest from the others, with a lower frequency of spoken domain words. Joe Biden is quite steadily the one with the highest average number of spoken language words, while for Clinton and Trump after having performed a Wald test to assess when their results are statistically different, we found that they are always statistically not different a part when considering the 200 and 250 most used words, for which the average for Trump is higher.
 
-DISCLAIMER: the dataset we used to tag the words either "academic" or "spoken" contains also many other tags. It is not true that a word is either academic or spoken. Moreover, the dataset contains 5000 words, so it may be that a word is not found in the dataset.
+DISCLAIMER: the dataset we used to label the words either "academic" or "spoken" language, contains also many other tags. It is not true that a word is either academic or spoken. Moreover, the dataset contains 5000 words, so it may be that a word is not found in the dataset.
 
-They are always statistically not different a part when considering the 200 and 250 most used words, for which the average for Trump is higher.
 
-Finally, we use the metrics computed with the API.
+Finally, we compute also the following five metrics. Flesch Reading Ease, Flesch Kincaid Grade, Gunning Fog Index, the MTLD and the VOC-d.
 
 {% include api_important.html %}
 
-The results coming from the first three metrics provided by the API confirm what we guessed from the words frequency and most used words: Barack Obama is the one with the most complex communication style and the widest words spectrum, while Donald Trump and Joe Biden are those with the worst results. Regarding the MTLD and VOCD metrics there is a high variability depending on the subset of quotations analyzed, showing the little robustness of the metric used on such data (random quotations aggregated to form texts), therefore they do not show reliable results, for more accurate results regarding the lexical spectrum refer to the frequency function.
+The results coming from the first three metrics provided by the API confirm what we guessed from the words frequency and most used words: Barack Obama is the one with the most complex communication style and the widest words spectrum, while Donald Trump and Joe Biden are those with the worst results. Regarding the MTLD and VOCD metrics there is a high variability depending on the subset of quotations analyzed, showing the little robustness of the metric used on such data (random quotations aggregated to form texts), therefore they do not show reliable results. For more accurate results regarding the lexical spectrum refer to the unique words graphs.
 
 # Aggregate comparisons
 
