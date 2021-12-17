@@ -38,7 +38,7 @@ The following table summarizes the results for the different metrics:
 
 
 
-| Metrics | Obama) | Trump |
+| Metrics | Obama | Trump |
 | --- | --- | --- |	
 |Average sentence length (words) |52.67| 11.82|
 | Average syllables per sentence |75.00| 17.59|
