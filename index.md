@@ -381,7 +381,7 @@ All the three metrics agreed on the significance for all groupings. The results 
 5. House Democrats vs Senate Democrats:         non-significant
 6. House Repubblicans vs Senate Republicans:   non-significant
 
-
+end
 
 
 
