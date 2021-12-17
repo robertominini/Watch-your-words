@@ -41,12 +41,6 @@ Renzi and Salvini are not alone, indeed we found that such differences can be fo
 </p>
 
 
-<p align="center">
-	<a href="https://www.youtube.com/watch?v=phsU1vVHOQI">
-  		<img width="600" height="400" alt="trump-youtube" src="https://i.postimg.cc/d12zrHzk/prova-pixel.png">
-	</a>
-</p>
-
 # What are we looking for? Research question
 
 
