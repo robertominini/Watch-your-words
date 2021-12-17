@@ -15,14 +15,12 @@
 # About QuoteBank
 Quotebank is an open corpus of 178 million quotations extracted from 162 million English news articles published in the years between 2008 and 2020. Each quotation is extracted and attributed to the speakers who uttered them thanks to the Quobert model, which is language and corpus-agnostic.  Both Quotebank and Quobert are publicly available at :https://doi.org/10.5281/zenodo.42773118
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{2}{4}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{2}{4}" title="\frac{2}{4}" /></a>
 
 
-<p align="center">
-	<a href="https://www.codecogs.com/eqnedit.php?latex=206.835&space;-&space;1.015&space;(\frac{total&space;\;&space;words}{total&space;\;&space;sentences})&space;-&space;84.6(\frac{total&space;\;&space;syllables}{total&space;\;&space;words})" target="_blank">
-		<img src="https://latex.codecogs.com/gif.latex?206.835&space;-&space;1.015&space;(\frac{total&space;\;&space;words}{total&space;\;&space;sentences})&space;-&space;84.6(\frac{total&space;\;&space;syllables}{total&space;\;&space;words})" title="206.835 - 1.015 (\frac{total \; words}{total \; sentences}) - 84.6(\frac{total \; syllables}{total \; words})" />
-	</a>
-</p>
+
+
+
+
 
 # Framing our research
 
@@ -109,8 +107,25 @@ To provide the reader with an intuition of the meaning of the values, this is a 
 |10.0–0.0	|Professional	|Extremely difficult to read. Best understood by university graduates.|
 
 
+The formula is: 
+
+<p align="center">
+	<a href="https://www.codecogs.com/eqnedit.php?latex=206.835&space;-&space;1.015&space;(\frac{total&space;\;&space;words}{total&space;\;&space;sentences})&space;-&space;84.6(\frac{total&space;\;&space;syllables}{total&space;\;&space;words})" target="_blank">
+		<img src="https://latex.codecogs.com/gif.latex?206.835&space;-&space;1.015&space;(\frac{total&space;\;&space;words}{total&space;\;&space;sentences})&space;-&space;84.6(\frac{total&space;\;&space;syllables}{total&space;\;&space;words})" title="206.835 - 1.015 (\frac{total \; words}{total \; sentences}) - 84.6(\frac{total \; syllables}{total \; words})" />
+	</a>
+</p>
+
+
+
 ### Flesch-Kincaid Grade
 The Flesch-Kincaid Grade is a modification of the Flesch Reading Ease index, and has a nice straightforward interpretation: its output represents roughly the number of years of education required to understand the text provided. The formula for the grade is the following:
+
+<p align="center">
+	<a href="https://www.codecogs.com/eqnedit.php?latex=0.39&space;(\frac{total&space;\;&space;words}{total&space;\;&space;sentences})&space;&plus;&space;11.8&space;(\frac{total&space;\;&space;syllables}{total&space;\;&space;words})&space;-15.59" target="_blank">
+		<img src="https://latex.codecogs.com/gif.latex?0.39&space;(\frac{total&space;\;&space;words}{total&space;\;&space;sentences})&space;&plus;&space;11.8&space;(\frac{total&space;\;&space;syllables}{total&space;\;&space;words})&space;-15.59" title="0.39 (\frac{total \; words}{total \; sentences}) + 11.8 (\frac{total \; syllables}{total \; words}) -15.59" />
+	</a>
+</p>
+
 
 ### Gunning Fog Index
 The Gunning Fog index is yet another readability score. Very closely to the Flesch-Kincaid Grade, it tries to make an estimate of the number of years of formal education needed to understand the text when reading it for the first time. The formula for the Gunning fox index is the following, where “complex words” are defined as the words with 3 or more syllables. 
