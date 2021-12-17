@@ -350,9 +350,17 @@ Focusing on the aggregated Flesch Reading Ease scores we noticed a slight tenden
 
 <iframe src="https://prova-robi-cera.herokuapp.com" style=" width: 800px; height: 800px;  overflow: hidden;" scrolling="no"></iframe>
 
-We also created a discrete score for each state for FRE distinguishing between low and high average scores, setting the threshold as the average Flesch Reading Ease for Democrats. 
+We also created a discrete score for each state for Flesch Reading Ease distinguishing between low and high average scores, setting the threshold as the average Flesch Reading Ease for Democrats. 
 
 {% map_discrete.html %}
+
+
+
+<p align="center">
+	<a href="https://www.youtube.com/watch?v=phsU1vVHOQI">
+  		<img width="600" height="400" alt="trump-youtube" src="https://i.postimg.cc/QVGYgbNz/Whats-App-Image-2021-12-17-at-23-52-15.jpg">
+	</a>
+</p>
 
 ### Hypothesis Testing
 
