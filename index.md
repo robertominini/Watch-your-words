@@ -108,12 +108,12 @@ The MTLD and the VOC-d measures are lexical diversity measures.
 The idea behind the MTLD is a sequential evaluation of TTR, where TTR is defined as the number of unique words / total number of words. Suppose we have the text: “of the people by the people for  the people”.
 We initially define a variable, factor count, to value 0.
 Then, we evaluate TTR sequentially 
-“of” 1/1 = 1
-“of the” 2 / 2 = 1
-“of the people”  3/3 = 1
-“of the people by” 4/4 = 1
-“of the people by the” 4/5  = 0.8
-“of the people by the people” 4 / 6 = 0.667
+|“of” |1/1 = 1|
+|“of the” |2 / 2 = 1|
+|“of the people” | 3/3 = 1|
+|“of the people by” |4/4 = 1|
+|“of the people by the”| 4/5  = 0.8|
+|“of the people by the people” |4 / 6 = 0.667|
 
 Now when a value falls under a certain factor size chosen a priori (in the paper is set to 0.720), we add 1 to the factor count and we reset factor calculations. So we go on like:
 
