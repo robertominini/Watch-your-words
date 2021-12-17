@@ -13,7 +13,7 @@
 <!-- [![ada-group-project-spaghetti-carbonada.png](https://i.postimg.cc/jdpBkQLG/ada-group-project-spaghetti-carbonada.png)](https://postimg.cc/dL9WhCRB) -->
 
 # About QuoteBank
-Quotebank is an open corpus of 178 million quotations extracted from 162 million English news articles published in the years between 2008 and 2020. Each quotation is extracted and attributed to the speakers who uttered them thanks to the Quobert model, which is language and corpus-agnostic.  Both Quotebank and Quobert are publicly available at :https://doi.org/10.5281/zenodo.42773118
+Quotebank is an open corpus of 178 million quotations extracted from 162 million English news articles published in the years between 2008 and 2020. Each quotation is extracted and attributed to the speakers who uttered them thanks to the Quobert model, which is language and corpus-agnostic.  Both Quotebank and Quobert are publicly available [here](https://doi.org/10.5281/zenodo.42773118)
 
 
 
@@ -51,14 +51,7 @@ Renzi and Salvini are not alone, indeed we found that such differences can be fo
 # What are we looking for? Research question
 
 
-Our supposition is that there is a difference in the linguistic usage between the two sides of the political spectrum. We suspect this difference to be found in the 
-
-number of different words while speaking (variety of lexicon)
-different length of phrases
-number of repetitions
-different structuring of the phrases (number of subordinate vs coordinate phrases)
-
-
+Our supposition is that there is a difference in the linguistic usage between the two sides of the political spectrum. We suspect this difference to be found in the number of different words while speaking (variety of lexicon), different length of phrases, number of repetitions and different structuring of the phrases (number of subordinate vs coordinate phrases).
 We plan to investigate whether this difference is present in the US political landscape. In other words, is the language that Republicans use much different than those that Democrats use. 
 
 
@@ -170,7 +163,7 @@ Then, we evaluate TTR sequentially
 |“of the people by the”| 4/5  = 0.8|
 |“of the people by the people” |4 / 6 = 0.667|
 
-Now when a value falls under a certain factor size chosen a priori (in [This](https://pubmed.ncbi.nlm.nih.gov/20479170/) famous paper it is set to 0.720), we add 1 to the factor count and we reset factor calculations. So we go on in the following way:
+Now when a value falls under a certain factor size chosen a priori (in [this](https://pubmed.ncbi.nlm.nih.gov/20479170/) famous paper it is set to 0.720), we add 1 to the factor count and we reset factor calculations. So we go on in the following way:
 
 |words string| factor computation|
 |---|---|
@@ -252,7 +245,7 @@ Overall, these results show that the metrics are capable of automatically detect
 
 
 # Let's start our investigation...
-The scope of our analysis is to apply a quantitative approach to the analysis of lexical levels of various prominent U.S. politicians. In particular we firstly applied the above-mentioned metrics to understand whether there is any significant difference in the lexical level of the last four presidential candidates, Joe Biden, Donald Trump, Hillary Clinton and Barack Obama. We start by analyzing the number of unique words every 100, 200, 500, 1000, 2000, 5000 and 10000 words for each of the subjects. The number of quotations used is 100000 for each candidate.
+The scope of our analysis is to apply a quantitative approach to the analysis of lexical levels of various prominent U.S. politicians. In particular we firstly applied the above-mentioned metrics to understand whether there is any significant difference in the lexical level of the last four presidential candidates, Joe Biden, Donald Trump, Hillary Clinton and Barack Obama. We start by analyzing the number of unique words every 100, 200, 500, 1000, 2000, 5000 and 10000 words for each of the subjects. The number of quotations used is 5000 for each candidate.
 
 {% include freq_words.html %}
 
@@ -351,12 +344,15 @@ In addition we can notice that the lexic chosen by politicians who more recently
 
 ## Map
 
-Finally, we asked ourselves if we could notice some significant differences for politicians elected in different US states. To do so we show an interactive map where we can visualize the aggregated values for the Flesh Reading Ease scores for each state, where we can also select individual parties and branches of the Congress.
-
+Finally, we asked ourselves if we could notice some significant differences for politicians elected in different US states. To do so we show an interactive map where we can visualize the aggregated values for each state of Flesh Reading Ease, Flesch Kincaid Grade and the number of unique words / 1000 words. 
+You can play around with the map by selecting only one of the two major parties or the entire political specturm as well as selcting just one or both branches of Congress. 
+Focusing on the aggregated Flesch Reading Ease scores we noticed a slight tendency of the Mid-West states to score lower than more populous costal states. 
 
 <iframe src="https://prova-robi-cera.herokuapp.com" style=" width: 800px; height: 800px;  overflow: hidden;" scrolling="no"></iframe>
 
+We also created a discrete score for each state for FRE distinguishing between low and high average scores, setting the threshold as the average Flesch Reading Ease for Democrats. 
 
+{% map_discrete.html %}
 
 ### Hypothesis Testing
 
@@ -370,7 +366,7 @@ In this section, we check whether there is a significant difference in language 
 6. House Repubblicans vs Senate Republicans
 
 
-All the three metrics agreed on the significance for all groupings. The results of the tests are:
+All the three metrics agreed on the significance for all groupings. The results of the tests, run on the Notebook, are the following:
 
 1. Democrats vs Republicans:                 **significant**
 2. House members vs Senate member:              non-significant
