@@ -120,9 +120,11 @@ Then, we evaluate TTR sequentially
 
 Now when a value falls under a certain factor size chosen a priori (in the paper is set to 0.720), we add 1 to the factor count and we reset factor calculations. So we go on like:
 
-“for” 1/1 = 1
-“for the” 2/2 = 1
-“for the people” 3/3 = 1
+|words string| factor computation|
+|---|---|
+|“for” |1/1 = 1|
+|“for the” |2/2 = 1|
+|“for the people” |3/3 = 1|
 
 When the text ends, usually we have some words left which have not reached the factor size of 0.720. For these last words,, the factor size is calculated on the basis of how far the TTR value has progressed toward the designated default factor size of .720
 When we have gone through all the text we compute MLD as number of words/factor count
